@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<tittle>abc</tittle>
+						<!-- alert会阻塞后面代码的执行。 -->
+						<!-- 新建main.js文件，将“alert("hello")剪切至main”。 -->
+						<!-- <>和</!可删除插入main.js script src="main.js"将其移动到页面地址，因为type默认地址就在那。 -->
+
+<script src="main.js"  type="text/javascript"
+ defer="defer">                       // 页面异步显示，多人同时做多件事。打开时页面会显示，警高框也会同时显示。相反同步显示则需要等上一步执行完成。
+</script>
+                        <!-- script标签里面装的是javascript的代码，默认是位置可以不打。 -->
+</head>
+<body>
+<script>
+// 可以将defer先注释，先看看async异步是怎样的在网页上按F10可以看出异步是哪个先加载完成哪个就先显示的。下载完立即执行，不影响页面其它操作-->
+//defer也是异步去下载但并没有去执行，是当所有页面所有代码都执行完了才开始执行。-->
+alert ("start")
+</script>
+<div>你好教授</div>
+<script>
+    alert("end");
+</script>
+<script>
+    alert ("start");
+</script>
+<div>你好教授</div>
+<script>
+    alert("end");
+</script>
+</body>
+</html>
