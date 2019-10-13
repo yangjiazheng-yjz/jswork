@@ -1,4 +1,4 @@
-var r = prompt('请输入圆的半径')
+﻿var r = prompt('请输入圆的半径')
 r = parseFloat(r)&&Number(r)
 if (!isNaN(r)){
     var cir = 2 * Math.PI * r
@@ -7,5 +7,5 @@ if (!isNaN(r)){
     document.getElementById('cir').value = cir.toFixed(2)
     document.getElementById('area').value = area.toFixed(2)
 }else{
-    alert('请恕人正确的数字')
+    alert('请输入正确的数字')
 }
