@@ -1,0 +1,10 @@
+﻿window.prompt = (function(prompt) {
+if (window.navigator.appName.toLowerCase().indexOf("microsoft")<0)
+return prompt;
+return function(msg) {
+window.vbs_var = null;
+execScript('window.vbs_var = InputBox(unEscape("'+escape(msg)+'"), "用户提示")', "VBScript");
+return window.vbs_var;
+};
+})(window.prompt);
+alert(window.prompt("请输入你的年龄"));
