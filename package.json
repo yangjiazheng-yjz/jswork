@@ -1,9 +1,10 @@
 {
   "name": "jswork",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "npm": "^6.12.0"
   },
   "devDependencies": {},
@@ -19,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/yangjiazheng-yjz/jswork/issues"
   },
-  "homepage": "https://github.com/yangjiazheng-yjz/jswork#readme"
+  "homepage": "https://github.com/yangjiazheng-yjz/jswork#readme",
+  "description": ""
 }
