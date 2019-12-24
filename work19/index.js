@@ -17,16 +17,18 @@ function connect(){
     }
     ws.onmessage=function(event){
         let board = document.getElementById('board')
-        let newmsg = document.getElementById('div')
+        let newmsg =document.createElement('div')
         console.log(event.data)
         newmsg.innerHTML= event.data
         board.appendChild(newmsg)
         board.scrollTop = board.scrollHeight;
     }
 }
+
 function disconnect(){
     ws.close()
 }
+
 function send(){
     let msg = document.getElementById('content').value
     ws.send(msg)
